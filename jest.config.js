@@ -16,7 +16,7 @@ module.exports = {
   },
   setupFiles: ["<rootDir>/loadershim.js"],
   testEnvironment: "jsdom",
-  setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
+  setupFilesAfterEnv: ["<rootDir>/setup-test-env.ts"],
   testResultsProcessor: "jest-sonar-reporter",
   moduleNameMapper: {
     "\\.(css|scss)$": "identity-obj-proxy",
