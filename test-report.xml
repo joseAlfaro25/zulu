@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\products\details\ProductDetails.test.tsx">
-    <testCase name="Advisors should render successfully" duration="34"/>
+    <testCase name="Product Details should render successfully" duration="39"/>
+  </file>
+  <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\layout\Layout.test.tsx">
+    <testCase name="Layout should render successfully" duration="47"/>
   </file>
 </testExecutions>

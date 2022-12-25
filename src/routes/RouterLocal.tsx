@@ -9,7 +9,7 @@ const ProductsDetails = lazy(
 
 const router: IRouter[] = [
   {
-    path: "/product",
+    path: "/",
     element: (
       <Layout>
         <Product />

@@ -1,10 +1,15 @@
 import React from "react";
+import Layout from "./Layout";
 import "@testing-library/jest-dom";
-import ProductDetails from "./ProductDetails";
 import { render } from "@testing-library/react";
-describe("Product Details", () => {
+
+describe("Layout", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<ProductDetails />);
+    const { baseElement } = render(
+      <Layout>
+        <div></div>
+      </Layout>
+    );
     expect(baseElement).toBeTruthy();
   });
 });

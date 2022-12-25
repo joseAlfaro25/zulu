@@ -1,0 +1,20 @@
+.wapper-card {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #eee;
+}
+.card-item-img {
+  width: 90px;
+  height: 90px;
+}
+.card-item-info {
+  &__price {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+.link-card-item{
+    color: #000000;
+    text-decoration: none;
+}
+

@@ -1,0 +1,25 @@
+
+
+.wapper-nav {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#ffff00;
+}
+.container-search {
+  width: 100%;
+  max-width: 1240px;
+  background-color: transparent;
+
+  &__box{
+    width: 60%;
+    height: 75%;
+  }
+  &__img{
+    width: 20%;
+  }
+}
+.wapper-layout{
+ 
+}

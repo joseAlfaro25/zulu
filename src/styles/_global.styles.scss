@@ -1,0 +1,34 @@
+// Global styles
+
+$size: (
+  'mobile': (
+    'min': 375px,
+    'max': 767px,
+  ),
+  'tablet': (
+    'min': 768px,
+    'max': 1279px,
+  ),
+  'desktop': (
+    'min': 1280px,
+    'max': 1280px,
+  ),
+);
+
+// fonts
+$primaryFont: 'Montserrat';
+$secondaryFont: 'Open Sans';
+
+$primaratyColor:#ffff00;
+$main_AAA: #252129;
+$strokes_AAA: #78747B;
+$turquoise_100: #e6fef9;
+$error: #E51717;
+$links_color: #3483FA;
+
+$gray_000: #fcfcfc;
+$gray_100: #E6E5E7;
+$gray_600: #433E47;
+$alt_bg: #EBF9FF;
+$light_blue: #F6FCFF;
+
