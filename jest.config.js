@@ -20,7 +20,7 @@ module.exports = {
   testResultsProcessor: "jest-sonar-reporter",
   moduleNameMapper: {
     "\\.(css|scss)$": "identity-obj-proxy",
-    '\\.(png|svg|pdf|jpg|jpeg)$': '<rootDir>/src/__mocks__/file-mock.ts',
+    '\\.(png|svg|pdf|jpg|jpeg)$': '<rootDir>/__mocks__/file-mock.ts',
     "^@/(.*)": "<rootDir>/src/$1",
   },
 };

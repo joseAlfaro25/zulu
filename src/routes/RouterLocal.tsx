@@ -12,13 +12,22 @@ const router: IRouter[] = [
     path: "/",
     element: (
       <Layout>
+        <></>
+      </Layout>
+    ),
+    key: 1,
+  },
+  {
+    path: "/api/items",
+    element: (
+      <Layout>
         <Product />
       </Layout>
     ),
     key: 1,
   },
   {
-    path: "/product/:id",
+    path: "/api/items/:id",
     element: (
       <Layout>
         <ProductsDetails />

@@ -1,20 +1,37 @@
+@import 'styles/styles';
+
 .wapper-card {
   display: flex;
+  padding: 32px;
+  color: $black;
   flex-direction: row;
-  border-bottom: 1px solid #eee;
+  background-color: $white;
+  border: 1px solid $alt_bg;
 }
 .card-item-img {
-  width: 90px;
-  height: 90px;
+  display: flex;
+  align-items: center;
+  &__container{
+    width: 90px;
+    height: 90px;
+  }
 }
 .card-item-info {
+  padding: 0px 17px;
   &__price {
-    font-size: 16px;
+    font-size: 24px;
+    color: $gray_800;
     font-weight: 600;
+    font-family: $primaryFont;
+  }
+  &__title{
+    font-size: 24px;
+    color: $gray_800;
+    font-family: $secondaryFont;
   }
 }
 .link-card-item{
-    color: #000000;
+    color: $gray_600;
     text-decoration: none;
 }
 

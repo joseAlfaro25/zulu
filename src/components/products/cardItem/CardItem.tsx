@@ -13,30 +13,20 @@ export interface ICadItem {
   description: string;
 }
 
-const CardItem = ({
-  id,
-  title,
-  price,
-  description,
-  category,
-  image,
-  rate,
-  count,
-}: ICadItem) => {
+const CardItem = ({ id, title, price, image }: ICadItem) => {
   return (
-    <Link to={`product/${id}`} className="link-card-item">
+    <Link to={`/api/items/${id}`} className="link-card-item">
       <div className="wapper-card">
-        <div>
+        <div className="card-item-img">
           <img
             src={image}
             alt={`imagen de ${title}`}
-            className="card-item-img"
+            className="card-item-img__container"
           />
         </div>
         <div className="card-item-info">
           <p className="card-item-info__price">$ {price}</p>
-          <p>{title}</p>
-          <p>{description?.slice(0, 40)}...</p>
+          <p className="card-item-info__title">{title}</p>
         </div>
       </div>
     </Link>

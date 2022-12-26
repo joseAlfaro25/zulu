@@ -1,31 +1,44 @@
 import React from "react";
-import Layout from "./Layout";
 import "@testing-library/jest-dom";
+import CardItem from "./CardItem";
 import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 
 jest.mock("react-router-dom", () => {
-  // Require the original module to not be mocked...
   const originalModule = jest.requireActual("react-router-dom");
-
   return {
     __esModule: true,
     ...originalModule,
-    // add your noops here
     useParams: jest.fn(),
     useHistory: jest.fn(),
-    useNavigate: jest.fn(),
+    useHref: jest.fn(),
   };
 });
-describe("Layout", () => {
+describe("Product Details", () => {
+  const data = {
+    id: 1,
+    title: "test",
+    price: 10020,
+    image: "http://test",
+    rate: 2.5,
+    count: 4,
+    category: "test",
+    description: "test description",
+  };
   it("should render successfully", () => {
     const { baseElement } = render(
       <MemoryRouter>
-        <Layout>
-          <div></div>
-        </Layout>
+        <CardItem {...data} />
       </MemoryRouter>
     );
     expect(baseElement).toBeTruthy();
+  });
+  it("Elements referenced correctly", () => {
+    const { getByText } = render(
+      <MemoryRouter>
+        <CardItem {...data} />
+      </MemoryRouter>
+    );
+    expect(getByText("test")).toBeInTheDocument();
   });
 });

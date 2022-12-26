@@ -25,10 +25,19 @@ $strokes_AAA: #78747B;
 $turquoise_100: #e6fef9;
 $error: #E51717;
 $links_color: #3483FA;
+$white: #FFF;
+$black: #000000;
 
 $gray_000: #fcfcfc;
-$gray_100: #E6E5E7;
-$gray_600: #433E47;
+$gray_800: #252426;
+$gray_600: #e3dfe7;
 $alt_bg: #EBF9FF;
 $light_blue: #F6FCFF;
+
+
+.container_general{
+  width: 80%;
+  margin:auto;
+  max-width: 1240px;
+}
 

@@ -1,0 +1,59 @@
+@import "styles/styles";
+
+.wapper-product-details {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  background-color: $white;
+}
+.product-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product-details-img {
+  width: 45%;
+  height: 80vh;
+  &__container {
+    width: 100%;
+    height: 100%;
+  }
+}
+.product-details-info {
+  width: 20%;
+  height: 80vh;
+  padding-right: 4px;
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: $gray_800;
+    font-family: $primaryFont;
+  }
+  &__price {
+    font-size: 30px;
+    color: $gray_800;
+    font-family: $primaryFont;
+  }
+  &__button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: $white;
+    border-radius: 4px;
+    background-color: $links_color;
+  }
+}
+.product-details-description {
+  width: 60%;
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    color: $gray_800;
+    font-family: $primaryFont;
+  }
+  &__text {
+    font-size: 16px;
+    color: $gray_800;
+    font-family: $secondaryFont;
+  }
+}
