@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\products\details\ProductDetails.test.tsx">
-    <testCase name="Product Details should render successfully" duration="129"/>
-  </file>
   <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\products\cardItem\CardItem.test.tsx">
-    <testCase name="Card Items should render successfully" duration="68"/>
-    <testCase name="Card Items Elements referenced correctly" duration="39"/>
+    <testCase name="Card Items should render successfully" duration="80"/>
+    <testCase name="Card Items Elements referenced correctly" duration="42"/>
   </file>
   <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\layout\Layout.test.tsx">
-    <testCase name="Layout should render successfully" duration="79"/>
-    <testCase name="Layout Sending information in search input" duration="423"/>
+    <testCase name="Layout should render successfully" duration="83"/>
+    <testCase name="Layout Sending information in search input" duration="398"/>
   </file>
   <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\products\Product.test.tsx">
-    <testCase name="Product should render successfully" duration="376"/>
+    <testCase name="Product should render successfully" duration="546"/>
+  </file>
+  <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\products\details\ProductDetails.test.tsx">
+    <testCase name="Product Details should render successfully" duration="142"/>
   </file>
 </testExecutions>
