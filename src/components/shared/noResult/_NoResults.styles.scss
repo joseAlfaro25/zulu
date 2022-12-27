@@ -1,0 +1,15 @@
+@import 'styles/styles';
+
+.container_result{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    background-color: $white;
+}
+
+.no_result_title{
+    font-size: 20px;
+    font-weight:600;
+    font-family:  $primaryFont;
+}

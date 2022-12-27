@@ -41,3 +41,20 @@ $light_blue: #F6FCFF;
   max-width: 1240px;
 }
 
+.loading_container{
+  display:flex;
+  height: 100%;
+  align-items:center;
+  justify-content:center;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+  background: #ececec;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #cfced0;
+  border-radius: 10px;
+}

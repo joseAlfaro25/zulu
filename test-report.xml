@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\products\details\ProductDetails.test.tsx">
-    <testCase name="Product Details should render successfully" duration="69"/>
+    <testCase name="Product Details should render successfully" duration="129"/>
   </file>
   <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\products\cardItem\CardItem.test.tsx">
-    <testCase name="Product Details should render successfully" duration="38"/>
-    <testCase name="Product Details Elements referenced correctly" duration="22"/>
+    <testCase name="Card Items should render successfully" duration="68"/>
+    <testCase name="Card Items Elements referenced correctly" duration="39"/>
   </file>
   <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\layout\Layout.test.tsx">
-    <testCase name="Layout should render successfully" duration="26"/>
+    <testCase name="Layout should render successfully" duration="79"/>
+    <testCase name="Layout Sending information in search input" duration="423"/>
+  </file>
+  <file path="C:\Users\jale1\OneDrive\Escritorio\Prueba Zulu\zulu\src\components\products\Product.test.tsx">
+    <testCase name="Product should render successfully" duration="376"/>
   </file>
 </testExecutions>

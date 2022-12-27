@@ -14,7 +14,7 @@ jest.mock("react-router-dom", () => {
     useHref: jest.fn(),
   };
 });
-describe("Product Details", () => {
+describe("Card Items", () => {
   const data = {
     id: 1,
     title: "test",
@@ -39,6 +39,6 @@ describe("Product Details", () => {
         <CardItem {...data} />
       </MemoryRouter>
     );
-    expect(getByText("test")).toBeInTheDocument();
+    expect(getByText(/test/i)).toBeInTheDocument();
   });
 });

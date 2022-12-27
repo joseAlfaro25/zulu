@@ -16,11 +16,14 @@
     margin: auto;
     &__input-search{
       width:93%;
+      border: none;
       height: 35px;
     }
     &__image-container{
       width: 35px;
       height: 35px;
+      border: none;
+      
     }
     &__image{
       width: 25px;
@@ -30,7 +33,7 @@
   }
 
   &__img{
-    width: 50px;
+    width: 60px;
     height: 40px;
    
   }
@@ -42,4 +45,5 @@
 
 .container-info-layout{
   height: 100vh;
+  overflow-y: auto;
 }

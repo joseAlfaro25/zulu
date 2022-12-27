@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getProduct } from "../../services/product/product.services";
 import CardItem, { ICadItem } from "./cardItem/CardItem";
 import { useSearchParams } from "react-router-dom";
+import NoResult from "components/shared/noResult/NoResult";
 
 const Product = () => {
   const [data, setData] = useState<ICadItem[]>();
@@ -17,17 +18,22 @@ const Product = () => {
       data.filter((row: ICadItem) => {
         return row.title.toLowerCase().includes(params as string);
       });
-    return filteredRows;
+    const dataEnd = params === "" ? [] : filteredRows;
+    return dataEnd;
   };
-  console.log("GET", filterData());
+  const dataProduct = filterData();
   useEffect(() => {
     product();
   }, []);
 
   return (
     <div className="container_general">
-      {filterData() &&
-        filterData()?.map((e: ICadItem) => <CardItem {...e} key={e.id} />)}
+      {dataProduct && dataProduct?.length > 0 ? (
+        filterData() &&
+        filterData()?.map((e: ICadItem) => <CardItem {...e} key={e.id} />)
+      ) : (
+        <NoResult />
+      )}
     </div>
   );
 };

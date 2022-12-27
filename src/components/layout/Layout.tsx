@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from "react";
 import "./_Layout.styles.scss";
 import { Images } from "image";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface ILayout {
   children: ReactNode;
@@ -22,15 +22,18 @@ const Layout = ({ children }: ILayout) => {
     <div className="wapper-layout">
       <div className="wapper-nav">
         <div className="container-search container_general">
-          <img
-            className="container-search__img"
-            src={Images.logo}
-            alt="logo de la tienda"
-          />
+          <Link to="/">
+            <img
+              className="container-search__img"
+              src={Images.logo}
+              alt="logo de la tienda"
+            />
+          </Link>
           <div className="container-search__box">
             <input
               type="search"
               className="container-search__box__input-search"
+              placeholder="Buscar por nombre"
               name="search"
               onChange={({ target }) => onChange(target.value)}
             />
@@ -47,7 +50,7 @@ const Layout = ({ children }: ILayout) => {
           </div>
         </div>
       </div>
-      <div className="container-info-layout">{children}</div>
+      <div className="container-info-layout custom-scroll">{children}</div>
     </div>
   );
 };
