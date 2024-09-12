@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../config/firebase"; // Importamos Firestore
 import "./_InscriptionForm.styles.scss";
 
 const RegisterUser = () => {
@@ -19,9 +21,24 @@ const RegisterUser = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
+
+    try {
+      await addDoc(collection(db, "registrations"), {
+        fullName: formData.fullName,
+        email: formData.email,
+        phone: formData.phone,
+        role: role,
+        additionalInfo: formData.additionalInfo,
+        createdAt: new Date(),
+      });
+
+      alert("Registro exitoso");
+    } catch (error) {
+      console.error("Error al registrar:", error);
+      alert("Error al registrar el usuario");
+    }
   };
 
   return (
