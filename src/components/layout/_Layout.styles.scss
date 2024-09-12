@@ -1,49 +1,104 @@
-@import 'styles/styles';
-
-.wapper-nav {
-  height: 3rem;
+/* Estilos generales */
+.wapper-layout {
   display: flex;
+  flex-direction: column;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  background-color:$primaratyColor;
-}
-.container-search {
-  display: flex;
-  align-items:center;
-  &__box{
-    width: 85%;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  height: 23px;
+
+  &__logo img {
+    height: 20px;
+    width: 50px;
+  }
+
+  &__search {
     display: flex;
-    margin: auto;
-    &__input-search{
-      width:93%;
+    align-items: center;
+
+    &__input {
+      padding: 0.5rem;
+      margin-right: 0.5rem;
       border: none;
-      height: 35px;
+      border-radius: 5px;
     }
-    &__image-container{
-      width: 35px;
-      height: 35px;
+
+    &__button {
+      background: none;
       border: none;
-      
+      cursor: pointer;
+
+      img {
+        width: 20px;
+      }
     }
-    &__image{
-      width: 25px;
-      display: flex;
-      justify-content: center;
+  }
+}
+
+/* Menú lateral */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #444;
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 2rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 1rem 0;
+      text-align: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 
-  &__img{
-    width: 60px;
-    height: 40px;
-   
+  &.open {
+    left: 0;
   }
-
-}
-.wapper-layout{
- background-color: $gray_600;
 }
 
-.container-info-layout{
-  height: 100vh;
-  overflow-y: auto;
+/* Estilos móviles */
+@media (max-width: 768px) {
+  .navbar__search {
+    width: 100%;
+
+    &__input {
+      flex-grow: 1;
+      width: 70%;
+    }
+
+    &__button {
+      width: 30px;
+    }
+  }
 }
